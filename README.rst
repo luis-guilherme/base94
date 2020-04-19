@@ -33,22 +33,22 @@ The standard solution nowadays for this purpose is the Base64 algorithm defined 
 If you're curious, how these input/output byte ratios were calculated for the Base64/32/16 encodings, then the answer is the LCM (Least Common Multiple). Let's calculate them by ourselves, and for this, we'll need one more function, GCD (Greatest Common Divisor)
 
 1. Base64 (Input: 8 bits, Output: 6 bits):
-    LCM(8, 6) = 8*6/GCD(8,6) = 24 bit
-    Input: 24 / 8 = 3 bytes
-    Output: 24  / 6  = 4 bytes
-    Ratio (Output/Input): 4/3
+    * LCM(8, 6) = 8*6/GCD(8,6) = 24 bit
+    * Input: 24 / 8 = 3 bytes
+    * Output: 24  / 6  = 4 bytes
+    * Ratio (Output/Input): 4/3
 
 2. Base32 (Input: 8 bits, Output: 5 bits):
-    LCM(8, 5) = 8*5/GCD(8,5) = 40 bit
-    Input: 40 / 8 = 5 bytes
-    Output: 40  / 5  = 8 bytes
-    Ratio (Output/Input): 8/5
+    * LCM(8, 5) = 8*5/GCD(8,5) = 40 bit
+    * Input: 40 / 8 = 5 bytes
+    * Output: 40  / 5  = 8 bytes
+    * Ratio (Output/Input): 8/5
 
 3. Base16 (Input: 8 bits, Output: 4 bits): 
-    LCM(8, 4) = 8*4/GCD(8,4) = 8 bit
-    Input: 8 / 8 = 1 byte
-    Output: 8  / 4  = 2 bytes
-    Ratio (Output/Input): 2/1
+    * LCM(8, 4) = 8*4/GCD(8,4) = 8 bit
+    * Input: 8 / 8 = 1 byte
+    * Output: 8  / 4  = 2 bytes
+    * Ratio (Output/Input): 2/1
 
 What's the point?
 =================
