@@ -15,13 +15,16 @@ How to run
 
     ./base94.py <-e|-d> src dst [base=42]
 
-for example:
+For example:
 
 .. code-block:: bash
 
     ./base94.py -e /bin/gethostip /tmp/gethostip.b94 94
     ./base94.py -e /bin/gethostip /tmp/gethostip.b42
     ./base94.py -d /tmp/gethostip.b42 /tmp/gethostip
+
+There is also ``test.sh`` script that uses a small binary file ``/bin/gethostip``
+for encoding/decoding and gathering different metrics. Simply run it with no arguments.
 
 Background
 ==========
