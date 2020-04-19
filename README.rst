@@ -1,7 +1,7 @@
 Base94
 ######
 
-A reversible translation of binary data to text with alphabet between 2 and 94 symbols.
+A reversible translation of binary data to text with an alphabet between 2 and 94 symbols.
 
 Description
 ===========
